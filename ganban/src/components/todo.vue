@@ -5,7 +5,6 @@
     <h3 class="panel-title">Todo</h3>
   </div>
   <div class="panel-body">
-    Panel content
   </div>
 </div>
   </div>

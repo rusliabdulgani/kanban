@@ -2,8 +2,12 @@
   <div>
     <div class="container" id="header">
       <div class="row" id="back">
-        <div class="col-md-12">
-          <Judul></Judul>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <Judul></Judul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
