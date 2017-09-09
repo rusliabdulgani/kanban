@@ -36,13 +36,13 @@
                 {{ detail.status}}
               </div>
               <div class="modal-footer">
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-4">
                   <button id="kiri" type="button" class="btn btn-primary" data-dismiss="modal" @click="moveToBacklog(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">back log</button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-4">
                   <button id="tengah" type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 col-md-4">
                   <button type="button" class="btn btn-success" data-dismiss="modal" @click="moveToDoing(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">doing</button>
                 </div>
               </div>

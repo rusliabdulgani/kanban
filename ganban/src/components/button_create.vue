@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">create task</button>
+    <button id="create" type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">create task</button>
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -70,8 +70,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
-button {
+#create {
   padding: 5px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 </style>

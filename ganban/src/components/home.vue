@@ -1,16 +1,5 @@
 <template lang="html">
   <div>
-    <div class="container" id="header">
-      <div class="row" id="back">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <Judul></Judul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -50,7 +39,6 @@ export default {
 
 <style lang="css" scoped>
  #header {
-   background-color: #118AB2;
    border-radius: 5px;
    margin-bottom: 20px;
    padding: 5px;
