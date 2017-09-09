@@ -39,7 +39,7 @@
                   <button id="tengah" type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button>
                 </div>
                 <div class="col-md-4">
-                  <button type="button" class="btn btn-info">todo</button>
+                  <button type="button" class="btn btn-info" data-dismiss="modal" >todo</button>
                 </div>
               </div>
             </div>
@@ -66,11 +66,16 @@ export default {
   },
   methods: {
     show () {
-      console.log('===============', this.backlog[0]['.key'])
+      console.log('===============', this.backlog)
     },
     getDetail (id) {
-      this.detail = this.backlog[0]
-      console.log(this.backlog[1])
+      for (let i = 0; i < this.backlog.length; i++) {
+        if (id === this.backlog[i]['.key']) {
+          this.detail = this.backlog[i]
+        }
+      }
+      console.log('++++++++++++++', typeof (this.backlog[0]['.key']))
+      console.log(typeof (id))
     },
     deleteTask (id) {
       this.$db.ref('task/backlog/' + id).remove()
