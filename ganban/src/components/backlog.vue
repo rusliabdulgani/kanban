@@ -33,8 +33,14 @@
                 {{ detail.point }}
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                  <button id="tengah" type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button>
+                </div>
+                <div class="col-md-4">
+                  <button type="button" class="btn btn-info">todo</button>
+                </div>
               </div>
             </div>
           </div>
@@ -60,11 +66,14 @@ export default {
   },
   methods: {
     show () {
-      console.log('===============', this.detail)
+      console.log('===============', this.backlog[0]['.key'])
     },
     getDetail (id) {
-      this.detail = this.backlog[`${id - 1}`]
-      console.log(this.detail)
+      this.detail = this.backlog[0]
+      console.log(this.backlog[1])
+    },
+    deleteTask (id) {
+      this.$db.ref('task/backlog/' + id).remove()
     }
   },
   created () {
@@ -73,5 +82,9 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+  #tengah {
+    display: block;
+    margin: 0 auto;
+  }
 </style>

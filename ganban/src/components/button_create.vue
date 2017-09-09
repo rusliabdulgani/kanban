@@ -53,20 +53,16 @@ export default {
   },
   methods: {
     addTask () {
-      let id = 1
-      this.$db.ref('task/backlog/').on('value', function (data) {
-        if (data.val().length === 0) {
-          id = data.val().length + id
-        } else {
-          id = data.val().length
-        }
-      })
-      this.$db.ref('task/backlog/' + id).set({
+      this.$db.ref('task/backlog/').push({
         title: this.title,
         description: this.description,
         point: this.point,
         assign_to: this.assign_to
       })
+      this.title = ''
+      this.description = ''
+      this.point = 0
+      this.assign_to = ''
     }
   }
 }
