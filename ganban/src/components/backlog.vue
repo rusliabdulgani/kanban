@@ -20,7 +20,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Detail task {{detail.title}} for {{detail.assign_to}}</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Detail task <b>"{{detail.title}}"</b> for <b>{{detail.assign_to}}</b></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -31,6 +31,9 @@
                 <br>
                 <b>Task Point:</b>
                 {{ detail.point }}
+                <br>
+                <b>Status:</b>
+                {{ detail.status}}
               </div>
               <div class="modal-footer">
                 <div class="col-md-4">
@@ -39,7 +42,7 @@
                   <button id="tengah" type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button>
                 </div>
                 <div class="col-md-4">
-                  <button type="button" class="btn btn-info" data-dismiss="modal" >todo</button>
+                  <button type="button" class="btn btn-info" data-dismiss="modal" @click="moveToTodo(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">todo</button>
                 </div>
               </div>
             </div>
@@ -74,10 +77,18 @@ export default {
           this.detail = this.backlog[i]
         }
       }
-      console.log('++++++++++++++', typeof (this.backlog[0]['.key']))
-      console.log(typeof (id))
     },
     deleteTask (id) {
+      this.$db.ref('task/backlog/' + id).remove()
+    },
+    moveToTodo (id, title, description, point, assignTo) {
+      this.$db.ref('task/todo/').push({
+        title: title,
+        description: description,
+        point: point,
+        assign_to: assignTo,
+        status: 'todo'
+      })
       this.$db.ref('task/backlog/' + id).remove()
     }
   },

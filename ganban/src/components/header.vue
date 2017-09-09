@@ -1,9 +1,14 @@
 <template lang="html">
   <div>
-    <div class="col-md-2">
-      <img id="logo" src="../assets/logo.jpg" alt="">
+    <div class="col-md-3">
+      <div class="col-md-3">
+        <img id="logo" src="../assets/logo.jpg" alt="">
+      </div>
+      <div class="col-md-9">
+        <h2 id="titel">Gan-Ban</h2>
+      </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-8">
     </div>
     <div class="col-md-1">
       <Tombol></Tombol>
@@ -24,11 +29,16 @@ export default {
   #logo {
     height: 70px;
     width: auto;
+    float: left;
   }
   
-  #create {
-    text-align: right;
+  #titel {
+    text-align: left;
+    float: left;
+    font-family: 'Lobster', cursive;
   }
+  
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 
   
 </style>

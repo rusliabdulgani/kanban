@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "ganban",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
