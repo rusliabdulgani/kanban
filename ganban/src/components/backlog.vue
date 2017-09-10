@@ -39,7 +39,7 @@
                 <div class="col-sm-4 col-md-4">
                 </div>
                 <div class="col-sm-4 col-md-4">
-                  <button id="tengah" type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button>
+                  <span id="tengah"><button type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button></span>
                 </div>
                 <div class="col-sm-4 col-md-4">
                   <button type="button" class="btn btn-info" data-dismiss="modal" @click="moveToTodo(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">todo</button>
@@ -100,8 +100,8 @@ export default {
 
 <style lang="css" scoped>
   #tengah {
-    display: block;
-    margin: 0 auto;
+    display:block;
+	  text-align:center;
   }
   
   #judul-panel {

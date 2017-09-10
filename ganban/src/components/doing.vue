@@ -37,10 +37,10 @@
               </div>
               <div class="modal-footer">
                 <div class="col-sm-4 col-md-4">
-                  <button id="kiri" type="button" class="btn btn-info" data-dismiss="modal" @click="moveToTodo(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">todo</button>
+                  <span id="kiri"><button type="button" class="btn btn-info" data-dismiss="modal" @click="moveToTodo(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">todo</button></span>
                 </div>
                 <div class="col-sm-4 col-md-4">
-                  <button id="tengah" type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button>
+                  <span id="tengah"><button type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button></span>
                 </div>
                 <div class="col-sm-4 col-md-4">
                   <button type="button" class="btn btn-warning" data-dismiss="modal" @click="moveToDone(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">done</button>
@@ -112,5 +112,15 @@ export default {
 <style lang="css">
   #judul-panel {
     font-family: 'Lobster', cursive;
+  }
+  
+  #tengah {
+    display:block;
+	  text-align:center;
+  }
+  
+  #kiri {
+    display:block;
+	  text-align:left;
   }
 </style>
