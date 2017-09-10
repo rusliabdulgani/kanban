@@ -76,4 +76,12 @@ export default {
   font-family: 'Philosopher', sans-serif;
   font-family: 'Handlee', cursive;
 }
+
+.form-group {
+  text-align: left;
+}
+
+.modal-header {
+  text-align: left;
+}
 </style>

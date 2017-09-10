@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Judul></Judul>
+    <Judul id="judul"></Judul>
     <div id="app">
       <router-view></router-view>
     </div>
@@ -30,8 +30,9 @@ export default {
 }
 
 #judul {
-  padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 15px;
+  margin-top: 40px;
+  font-family: 'Philosopher', sans-serif;
+  font-family: 'Handlee', cursive;
 }
 </style>
