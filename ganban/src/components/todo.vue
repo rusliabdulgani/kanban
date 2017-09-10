@@ -2,7 +2,7 @@
   <div>
     <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Todo</h3>
+    <h3 id="judul-panel" class="panel-title">Todo</h3>
   </div>
   <div class="panel-body">
     <div class="panel panel-default" v-for="td in todo">
@@ -112,5 +112,9 @@ export default {
 <style lang="css" scoped>
   #kiri {
     text-align: left;
+  }
+  
+  #judul-panel {
+    font-family: 'Lobster', cursive;
   }
 </style>

@@ -9,7 +9,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">New Task</h4>
+            <h4 id="judul-modal" class="modal-title">New Task</h4>
           </div>
           <div class="modal-body">
             <div class="form-group">
@@ -83,5 +83,9 @@ export default {
 
 .modal-header {
   text-align: left;
+}
+
+#judul-modal {
+  font-family: 'Lobster', cursive;
 }
 </style>

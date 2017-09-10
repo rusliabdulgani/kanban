@@ -1,0 +1,25 @@
+[debug] [2017-09-10T04:05:36.489Z] ----------------------------------------------------------------------
+[debug] [2017-09-10T04:05:36.494Z] Command:       /usr/bin/nodejs /usr/bin/firebase deploy
+[debug] [2017-09-10T04:05:36.495Z] CLI Version:   3.10.1
+[debug] [2017-09-10T04:05:36.495Z] Platform:      linux
+[debug] [2017-09-10T04:05:36.495Z] Node Version:  v6.11.2
+[debug] [2017-09-10T04:05:36.495Z] Time:          Sun Sep 10 2017 11:05:36 GMT+0700 (WIB)
+[debug] [2017-09-10T04:05:36.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-10T04:05:36.522Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-10T04:05:36.522Z] > authorizing via signed-in user
+[debug] [2017-09-10T04:05:36.526Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/kanban-ab936  
+ Sun Sep 10 2017 11:05:36 GMT+0700 (WIB)
+[debug] [2017-09-10T04:05:38.155Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-10T04:05:38.157Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/kanban-ab936/tokens  
+ Sun Sep 10 2017 11:05:38 GMT+0700 (WIB)
+[debug] [2017-09-10T04:05:40.161Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'kanban-ab936'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing ./dist directory for upload...
+[debug] [2017-09-10T04:05:42.840Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/kanban-ab936/uploads/-KtdxiSAl94OV8j9mdSt?fileCount=10&message=  
+ Sun Sep 10 2017 11:05:42 GMT+0700 (WIB)
+[debug] [2017-09-10T04:05:49.745Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-10T04:05:49.747Z] [hosting] .tgz uploaded successfully, waiting for extraction

@@ -2,7 +2,7 @@
   <div>
     <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">Back Log</h3>
+    <h3 id="judul-panel" class="panel-title">Back Log</h3>
   </div>
   <div class="panel-body">
     <div class="panel panel-default" v-for="back in backlog">
@@ -102,5 +102,9 @@ export default {
   #tengah {
     display: block;
     margin: 0 auto;
+  }
+  
+  #judul-panel {
+    font-family: 'Lobster', cursive;
   }
 </style>

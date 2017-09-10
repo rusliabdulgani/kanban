@@ -47,6 +47,5 @@ export default {
   }
   
   font-family: 'Yanone Kaffeesatz', sans-serif;
-
   
 </style>

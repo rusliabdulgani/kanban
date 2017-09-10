@@ -2,7 +2,7 @@
   <div>
     <div class="panel panel-success">
   <div class="panel-heading">
-    <h3 class="panel-title">Doing</h3>
+    <h3 id="judul-panel" class="panel-title">Doing</h3>
   </div>
   <div class="panel-body">
     <div class="panel panel-default" v-for="doi in doing">
@@ -110,4 +110,7 @@ export default {
 </script>
 
 <style lang="css">
+  #judul-panel {
+    font-family: 'Lobster', cursive;
+  }
 </style>
