@@ -19,7 +19,8 @@ export default {
 
 <style>
 #app {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Philosopher', sans-serif;
+  font-family: 'Handlee', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

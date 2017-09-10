@@ -73,5 +73,7 @@ export default {
 #create {
   padding: 5px;
   margin-top: 20px;
+  font-family: 'Philosopher', sans-serif;
+  font-family: 'Handlee', cursive;
 }
 </style>
