@@ -1,7 +1,9 @@
 <template lang="html">
   <div>
-    <div id="kiri" class="col-sm-4 col-md-4" v-if="prevStatus !== ''">
-      <button type="button" :class="buttonClassPrev" data-dismiss="modal" @click="moveTo(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to, prevStatus)">{{ prevStatus }}</button>
+    <div id="kiri" class="col-sm-4 col-md-4">
+      <div v-if="prevStatus !== ''">
+        <button type="button" :class="buttonClassPrev" data-dismiss="modal" @click="moveTo(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to, prevStatus)">{{ prevStatus }}</button>
+      </div>
     </div>
     <div class="col-sm-4 col-md-4">
       <span id="tengah"><button type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button></span>
