@@ -1,6 +1,6 @@
 # ganban
 
-> A Vue.js project
+> Kanban App using vue js, firebase & vuefire
 
 ## Build Setup
 
