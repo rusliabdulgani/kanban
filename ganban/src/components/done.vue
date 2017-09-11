@@ -37,7 +37,7 @@
               </div>
               <div class="modal-footer">
                 <div class="col-sm-4 col-md-4">
-                  <button id="kiri" type="button" class="btn btn-primary" data-dismiss="modal" @click="moveToDoing(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">doing</button>
+                  <button id="kiri" type="button" class="btn btn-success" data-dismiss="modal" @click="moveToDoing(detail['.key'], detail.title, detail.description, detail.point, detail.assign_to)">doing</button>
                 </div>
                 <div class=" col-sm-4 col-md-4">
                   <span id="tengah"><button type="button" class="btn btn-danger" data-dismiss="modal" @click="deleteTask(detail['.key'])">delete</button></span>
